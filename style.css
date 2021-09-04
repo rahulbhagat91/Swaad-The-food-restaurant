@@ -15,7 +15,7 @@
   padding: 6px 20px;
   font-size: 30px;
   z-index: 999999;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .navbar__menu{
   display: none;
@@ -25,7 +25,7 @@
   top:0;
 }
 .master__container {
- 
+  
   text-align: center;
 }
 .master__image__container {
@@ -52,6 +52,16 @@
   width: 120px;
   height: 40px;
 }
+.master__button:hover{
+  background-color: rgb(26, 184, 21);
+  width: 140px;
+  height: 40px;
+  font-size: 20px;
+  transition: 2s;
+  cursor: pointer;
+  
+  
+ }
 .master__discription {
   position: absolute;
   z-index: 99;
@@ -61,6 +71,7 @@
   right: 30%;
   top: 10%;
 }
+
 .master__discription h2 {
   font-size: 52px;
   text-align: center;
@@ -166,7 +177,13 @@ p{
     height: 400px;
   }
   .master__discription {
-    top: 20%;
+      position: absolute;
+      z-index: 99;
+      color: white;
+      line-height: 1.2rem;
+      left: 30%;
+      right: 30%;
+      top: 20%;
   }
   .master__discription h2 {
     font-size: 65px;
@@ -218,9 +235,9 @@ font-size: small;
   padding-right: 25%;
 }
 
-.people__comment{
+.people__comment p{
   margin: 15px 20px;
-  padding: 20px 100px;
+  padding: 20px 150px;
 }
 .row{
   width: 30%;
@@ -235,8 +252,22 @@ font-size: small;
 
 
 @media (min-width: 1080px) {
+  
+  .master__discription {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    line-height: 1.2rem;
+    left: 30%;
+    right: 30%;
+    top: 28%;
+}
   .navbar__container{
     height: 80px;
+    padding: 20px 10px;
+  }
+  .master__image__container{
+    height: 600px;
   }
   .hamburger{
     display: none;
